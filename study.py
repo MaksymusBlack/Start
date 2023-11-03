@@ -193,6 +193,30 @@
 
 # print(last_digit)
 
-odd_numbers = [1, 3, 5, 7, 9]
-for i in odd_numbers:
-    print(i ** 2)
+
+
+
+## Функціі і списки
+
+# def filter_list(lst):
+#     n = []
+#     for i in lst:
+#         if i >= 10:
+#             n.append(i)
+#     return n
+
+# numbers = [3, 5, 23, 45, 6, 89, 31, 8]
+# result = filter_list(numbers)
+# print(result)
+
+# num = int(input("Введіть ціле число (0 до 10): "))
+# count = 10 - num
+# i = 1
+# while i <= count:
+#     print(f"Ітерація {i}")
+#     i = i + 1
+
+# print("Програма закінчена")
+ 
+
+
