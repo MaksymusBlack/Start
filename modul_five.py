@@ -11,6 +11,17 @@
 #     print(real_len)
 #     return real_len
 
+# def real_len(text):
+#     result = 0
+#     for e in text:
+#         if e == '\n' or e == '\t' or e == '\v' or e == '\r' or e == '\f':
+#             continue
+#         result += 1
+#     print(result)
+#     return result
+
+# real_len('Alex\nKdfe23\t\f\v.\r')
+
 
 
 ## Task 2     Складне)
@@ -300,13 +311,46 @@ import re
 # import re
 
 
-def find_all_emails(text):
-    result = re.findall(r'\b[A-Za-z0-9._]{2,}+@[A-Za-z0-9]+\.[A-Za-z]{2,}\b', text, flags=re.IGNORECASE)
+# def find_all_emails(text):
+#     result = re.findall(r'[a-zA-Z]{1}[a-zA-Z0-9._]{1,}@[a-zA-Z]+\.[a-zA-Z]{2,}', text)
+#     print(result)
+#     return result
+
+# find_all_emails('Ima.Fool@iana.org Ima.Fool@iana.o 1Fool@iana.org first_last@iana.org first.middle.last@iana.or a@test.com abc111@test.com.net')
+
+
+## Task 14 
+
+
+# import re
+
+
+# def find_all_phones(text):
+#     result = re.findall(r"[+][3][8]0[(][\d]{2}[)][\d]{3}[-][\d]{1}[-][\d]{3}|[+][3][8]0[(][\d]{2}[)][\d]{3}[-][\d]{2}[-][\d]{2}", text)
+#     print(result)
+#     return result
+
+# find_all_phones('Irma +380(67)777-7-771 second +380(67)777-77-77 aloha a@test.com abc111@test.com.net +380(67)111-777-777+380(67)777-77-787')
+
+
+
+## Task 15
+
+import re
+
+
+# def find_all_links(text):
+#     result = []
+#     iterator = re.finditer(r"https?:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}", text)
+#     for match in iterator:
+#         result.append(match.group())
+#     return result
+
+def find_all_phones(text):
+    # result = re.findall(r"https:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}|http:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}", text)
+    result = re.findall(r"https?:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}", text)
     print(result)
     return result
 
-find_all_emails('Ima.Fool@iana.org Ima.Fool@iana.o 1Fool@iana.org first_last@iana.org first.middle.last@iana.or a@test.com abc111@test.com.net')
-
-
-
+find_all_phones('The main search site in the world is https://www.google.com The main social network for people in the world is https://www.facebook.com But programmers have their own social network http://github.com There they share their code. some url to check https://www..facebook.com www.facebook.com ')
 
