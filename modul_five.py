@@ -346,11 +346,11 @@ import re
 #         result.append(match.group())
 #     return result
 
-def find_all_phones(text):
-    # result = re.findall(r"https:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}|http:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}", text)
-    result = re.findall(r"https?:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}", text)
-    print(result)
-    return result
+# def find_all_phones(text):
+#     # result = re.findall(r"https:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}|http:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}", text)
+#     result = re.findall(r"https?:\/\/[\w]{1,}.[\w]{2,}[\w\.]{1,}", text)
+#     print(result)
+#     return result
 
-find_all_phones('The main search site in the world is https://www.google.com The main social network for people in the world is https://www.facebook.com But programmers have their own social network http://github.com There they share their code. some url to check https://www..facebook.com www.facebook.com ')
+# find_all_phones('The main search site in the world is https://www.google.com The main social network for people in the world is https://www.facebook.com But programmers have their own social network http://github.com There they share their code. some url to check https://www..facebook.com www.facebook.com ')
 
