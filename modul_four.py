@@ -309,7 +309,7 @@
 ## Task 13
 
 
-from pathlib import Path
+# from pathlib import Path
 
 
 # p = Path('/Users/zhutk/OneDrive/Документы/Repository/Start')
@@ -335,41 +335,41 @@ from pathlib import Path
 
 ## Task 14
 
-# import sys
+import sys
 
 
-# def parse_args():
+def parse_args():
     
-#     list_of_argv = []
-#     result = ""
+    list_of_argv = []
+    result = ""
     
-#     for i in sys.argv:
-#         if i != sys.argv[0]:
-#             list_of_argv.append(i)
+    for i in sys.argv:
+        if i != sys.argv[0]:
+            list_of_argv.append(i)
          
-#     result = ' '.join(list_of_argv)
-#     print(result)
-#     return result
+    result = ' '.join(list_of_argv)
+    print(result)
+    return result
 
-# parse_args()
+parse_args()
 
 
 
 ## Task 8  ХЗ як працює) в плані, без'i' не працює, ален й вона не працює
 
-def game(terra, power):
-    final_power = power
-    for lst in terra:
-        for i, val in enumerate(lst):
-            print(val)
-            if power >= val:
-                final_power += val      
-            else:
-                break
-    print(final_power)
-    return final_power 
+# def game(terra, power):
+#     final_power = power
+#     for lst in terra:
+#         for i, val in enumerate(lst):
+#             print(val)
+#             if power >= val:
+#                 final_power += val      
+#             else:
+#                 break
+#     print(final_power)
+#     return final_power 
 
-game([[1, 1, 5, 10], [10, 2], [1, 1, 1]], 1)
+# game([[1, 1, 5, 10], [10, 2], [1, 1, 1]], 1)
 
 
 
